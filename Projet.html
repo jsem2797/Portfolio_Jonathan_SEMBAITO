@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefolio- [Jonathan SEMBAITO]</title>
+    <meta name="description" content="Portfolio de [Nom Prénom] — Développeur en devenir, passionné par le web et le design." />
+    <link rel="stylesheet" href="Projet.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container header-bar">
+      <a class="brand" href="#top" aria-label="Accueil">
+        <span class="brand__name">NOM + PRENOM</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <ul id="menu" class="nav__list">
+          <li><a href="#Hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <section id="hero" class="hero">
+        <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">Je suis <span class="accent">Jonathan SEMBAITO</span>, Développeur en devenir passionné par le web et le design !</h1>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">Voir mes projets</a>
+        </div>
+      </div>
+      <figure class="hero__figure">
+        <img 
+        src="metier-developpeur-web-ynov-768x462.jpg" 
+        alt="Illustration de développement web"
+        />
+      </figure>
+    </div>
+    </section>
+    <section id="about" class="section">
+    <div class="container">
+      <h2>À propos</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>Je m'appelle <strong>Jonathan SEMBAITO</strong>, passionné par la création de sites web modernes et interactifs.</p>
+          <p>Je suis actuellement étudiant en développement web et j’améliore mes compétences en <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>.</p>
+          <p>J’adore expérimenter avec les nouvelles technologies et donner vie à des projets concrets pour l'essor de l'Afrique!</p>
+          <a class="btn btn--ghost" href="CV  SEMBAITO.pdf" download target="_blank">Télécharger mon CV</a>
+        </div>
+        <figure class="about__figure">
+        <img 
+        src="JSEM.jpeg" 
+        alt="La photo profil de Jonathan SEMBAITO"
+        />
+      </figure>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section--alt">
+    <div class="container">
+      <h2>Mes projets</h2>
+
+      <div class="projects__grid">
+      
+        <article class="card project-card">
+          <header class="card__header">
+            <h3 class="card__title"></h3>
+          </header>
+          <p class="card__desc">Un mini‑jeu interactif en JavaScript qui utilise des événements DOM.</p>
+          <p class="card__tags">#html #css #js</p>
+          <footer class="card__footer">
+            <a class="btn btn--sm" href="#" aria-label="Voir">Voir</a>
+          </footer>
+        </article>
+
+        <article class="card project-card">
+          <header class="card__header">
+            <h3 class="card__title"></h3>
+          </header>
+          <p class="card__desc">Une galerie d’images responsive avec filtrage et animations.</p>
+          <p class="card__tags">#html #css #js</p>
+          <footer class="card__footer">
+            <a class="btn btn--sm" href="#" aria-label="Voir le projet Galerie responsive">Voir</a>
+          </footer>
+        </article>
+
+        <article class="card project-card">
+          <header class="card__header">
+            <h3 class="card__title"></h3>
+          </header>
+          <p class="card__desc">Un formulaire avec validation côté client et feedback UX.</p>
+          <p class="card__tags">#html #css #js</p>
+          <footer class="card__footer">
+            <a class="btn btn--sm" href="#" aria-label="Voir le projet Formulaire validé">Voir</a>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Mes compétences</h2>
+
+      <div class="skills__wrap">
+        <figure class="skills__group">
+          <figcaption class="skills__title">Soft skills</figcaption>
+          <ul class="skills__list">
+            <li>Gestion de projet</li>
+            <li>Résolution de problème</li>
+            <li>Adaptabilité</li>
+          </ul>
+        </figure>
+
+        <figure class="skills__group">
+          <figcaption class="skills__title">Hard skills</figcaption>
+          <ul class="skills__list skills__list--grid">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>VS Code</li>
+          </ul>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="contact__intro">Vous avez un projet en tête ? N’hésitez pas à me contacter.</p>
+
+      <form class="contact__form" novalidate>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="firstName">Votre prénom</label>
+            <input id="firstName" name="firstName" type="text" placeholder="Ex. Jonathan" required />
+            <small class="form__error" data-error-for="firstName"></small>
+          </div>
+
+          <div class="form__field">
+            <label for="lastName">Votre nom</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Ex. Sembaito" required />
+            <small class="form__error" data-error-for="lastName"></small>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="subject">Votre sujet</label>
+            <input id="subject" name="subject" type="text" placeholder="Développement d’un site web" required />
+            <small class="form__error" data-error-for="subject"></small>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="message">Écrivez votre message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin en assistance!!!" required></textarea>
+            <small class="form__error" data-error-for="message"></small>
+          </div>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Envoyer</button>
+        </div>
+
+        <p class="form__status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>Designed by <strong>Jonathan SEMBAITO</strong> with HTML • CSS • JS</p>
+      <p>© 2026 — Tous droits réservés</p>
+    </div>
+  </footer>
+  <script src="Projet.js"></script>
+</body>
+</html>
